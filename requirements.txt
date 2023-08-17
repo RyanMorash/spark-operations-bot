@@ -13,9 +13,9 @@ ciscosparkbot==0.6.3
 click==8.1.6
 docutils==0.14
 future==0.18.3
-gevent==1.2.2
-greenlet==0.4.12
-grequests==0.3.0
+gevent==23.7.0
+greenlet==2.0.2
+grequests==0.7.0
 idna==2.5
 itsdangerous==2.1.2
 jmespath==0.9.3
