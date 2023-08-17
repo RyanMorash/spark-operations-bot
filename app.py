@@ -114,8 +114,8 @@ if cico_common.umbrella_support():
 # ========================================================
 
 # Create a new bot
-bot = SparkBot(bot_app_name, spark_bot_token=spark_token,
-               spark_bot_url=bot_url, spark_bot_email=bot_email, default_action="help", debug=True)
+bot = SparkBot(bot_app_name, teams_bot_token=spark_token,
+               teams_bot_url=bot_url, teams_bot_email=bot_email, default_action="help", debug=True)
 
 bot.add_command('help', 'Get help.', bot.send_help)
 bot.remove_command('/echo')
