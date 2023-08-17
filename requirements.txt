@@ -1,3 +1,4 @@
+wheel==0.38.1
 APScheduler==3.4.0
 Flask==0.12.2
 Jinja2==2.9.6
@@ -24,4 +25,3 @@ requests-toolbelt==0.8.0
 s3transfer==0.1.11
 six==1.11.0
 urllib3==1.22
-wheel==0.38.1
