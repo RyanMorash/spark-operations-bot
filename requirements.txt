@@ -12,7 +12,7 @@ ciscosparkapi==0.5.5
 ciscosparkbot==0.6.3
 click==6.7
 docutils==0.14
-future==0.16.0
+future==0.18.3
 gevent==1.2.2
 greenlet==0.4.12
 grequests==0.3.0
