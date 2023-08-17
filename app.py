@@ -5,7 +5,7 @@
     See the README at https://github.com/meraki/spark-operations-bot
 '''
 import os
-from ciscosparkbot import SparkBot
+from ciscoteamsbot import TeamsBot as SparkBot
 import cico_meraki
 import cico_spark_call
 import cico_combined
