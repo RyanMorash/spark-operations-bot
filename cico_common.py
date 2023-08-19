@@ -19,6 +19,9 @@ s3_key = os.getenv("S3_ACCESS_KEY_ID")
 s3_secret = os.getenv("S3_SECRET_ACCESS_KEY")
 a4e_client_id = os.getenv("A4E_CLIENT_ID")
 a4e_client_secret = os.getenv("A4E_CLIENT_SECRET")
+cucm_username = os.getenv("CUCM_USERNAME")
+cucm_password = os.getenv("CUCM_PASSWORD")
+cucm_host = os.getenv("CUCM_HOST")
 
 
 # ========================================================
@@ -86,6 +89,18 @@ def a4e_support():
     :return: true/false based on whether or not A4E support is available
     '''
     if a4e_client_id and a4e_client_secret:
+        return True
+    else:
+        return False
+
+def cucm_support():
+    '''
+    This function is used to check whether the CUCM environment variables have been set. It will return
+    true if they have and false if they have not
+
+    :return: true/false based on whether or not CUCM support is available
+    '''
+    if cucm_username and cucm_password and cucm_host:
         return True
     else:
         return False
