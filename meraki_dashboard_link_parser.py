@@ -17,7 +17,7 @@ import time
 # Load required parameters from environment variables
 # ========================================================
 
-load_dotenv
+load_dotenv()
 
 meraki_http_un = os.getenv("MERAKI_HTTP_USERNAME")
 meraki_http_pw = os.getenv("MERAKI_HTTP_PASSWORD")

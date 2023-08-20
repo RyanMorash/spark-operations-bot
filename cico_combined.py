@@ -14,7 +14,7 @@ import cico_common
 # Load required parameters from environment variables
 # ========================================================
 
-load_dotenv
+load_dotenv()
 
 meraki_client_to = os.getenv("MERAKI_CLIENT_TIMESPAN")
 if not meraki_client_to:

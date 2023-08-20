@@ -12,7 +12,7 @@ from stat import S_ISREG, S_ISDIR, ST_CTIME, ST_MODE
 # Load required parameters from environment variables
 # ========================================================
 
-load_dotenv
+load_dotenv()
 
 umbrella_over_dash = os.getenv("UMBRELLA_OVERRIDE_DASHBOARD")
 

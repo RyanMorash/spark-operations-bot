@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 # Load required parameters from environment variables
 # ========================================================
 
-load_dotenv
+load_dotenv()
 
 meraki_api_token = os.getenv("MERAKI_API_TOKEN")
 meraki_org = os.getenv("MERAKI_ORG")

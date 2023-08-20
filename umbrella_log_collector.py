@@ -10,7 +10,7 @@ from pathlib import Path
 # Load required parameters from environment variables
 # ========================================================
 
-load_dotenv
+load_dotenv()
 
 s3_bucket = os.getenv("S3_BUCKET")
 s3_key = os.getenv("S3_ACCESS_KEY_ID")

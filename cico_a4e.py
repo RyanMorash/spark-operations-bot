@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 import json
 
-load_dotenv
+load_dotenv()
 a4e_client_id = os.getenv("A4E_CLIENT_ID")
 a4e_client_secret = os.getenv("A4E_CLIENT_SECRET")
 header = {"Accept-Encoding": "gzip"}
