@@ -5,6 +5,7 @@
     See the README at https://github.com/meraki/spark-operations-bot
 '''
 import os
+from dotenv import load_dotenv
 from webexteamsbot import TeamsBot as SparkBot
 import cico_meraki
 import cico_spark_call
@@ -22,6 +23,8 @@ import meraki_dashboard_link_parser
 # ========================================================
 # Load required parameters from environment variables
 # ========================================================
+
+load_dotenv()
 
 # If there is a PORT environment variable, use that to map the Flask port. Used for Heroku.
 # If no port set, use default of 5000.

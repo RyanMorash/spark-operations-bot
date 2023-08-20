@@ -2,12 +2,15 @@
     This module is specifically for Umbrella log collection operations. This is for the Amazon S3 API.
 '''
 import os
+from dotenv import load_dotenv
 import boto3
 from pathlib import Path
 
 # ========================================================
 # Load required parameters from environment variables
 # ========================================================
+
+load_dotenv
 
 s3_bucket = os.getenv("S3_BUCKET")
 s3_key = os.getenv("S3_ACCESS_KEY_ID")

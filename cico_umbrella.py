@@ -3,6 +3,7 @@
     relevant Umbrella API.
 '''
 import os
+from dotenv import load_dotenv
 import gzip
 import io
 from stat import S_ISREG, S_ISDIR, ST_CTIME, ST_MODE
@@ -10,6 +11,8 @@ from stat import S_ISREG, S_ISDIR, ST_CTIME, ST_MODE
 # ========================================================
 # Load required parameters from environment variables
 # ========================================================
+
+load_dotenv
 
 umbrella_over_dash = os.getenv("UMBRELLA_OVERRIDE_DASHBOARD")
 

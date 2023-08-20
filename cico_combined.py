@@ -3,6 +3,7 @@
     should be placed into a product specific module, and any relevant integration should be added here.
 '''
 import os
+from dotenv import load_dotenv
 import cico_meraki
 import cico_spark_call
 import cico_umbrella
@@ -12,6 +13,8 @@ import cico_common
 # ========================================================
 # Load required parameters from environment variables
 # ========================================================
+
+load_dotenv
 
 meraki_client_to = os.getenv("MERAKI_CLIENT_TIMESPAN")
 if not meraki_client_to:

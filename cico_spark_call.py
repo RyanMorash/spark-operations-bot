@@ -6,10 +6,13 @@ import base64
 import requests
 import json
 import os
+from dotenv import load_dotenv
 
 # ========================================================
 # Load required parameters from environment variables
 # ========================================================
+
+load_dotenv
 
 spark_api_token = os.getenv("SPARK_API_TOKEN")
 spark_over_dash = os.getenv("SPARK_OVERRIDE_DASHBOARD")

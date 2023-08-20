@@ -11,6 +11,7 @@ def stub(*args, **kwargs):  # pylint: disable=unused-argument
 monkey.patch_all = stub
 import grequests
 import os
+from dotenv import load_dotenv
 import json
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
@@ -18,6 +19,8 @@ from urllib3.util.retry import Retry
 # ========================================================
 # Load required parameters from environment variables
 # ========================================================
+
+load_dotenv
 
 meraki_client_to = os.getenv("MERAKI_CLIENT_TIMESPAN")
 if not meraki_client_to:

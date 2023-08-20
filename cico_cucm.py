@@ -1,9 +1,12 @@
 import os
+from dotenv import load_dotenv
 from CollabConnector import CUCM
 
 # ========================================================
 # Load required parameters from environment variables
 # ========================================================
+
+load_dotenv
 
 cucm_username = os.getenv("CUCM_USERNAME")
 cucm_password = os.getenv("CUCM_PASSWORD")
