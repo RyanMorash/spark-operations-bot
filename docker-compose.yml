@@ -1,6 +1,6 @@
 version: '2'
 services:
-  sparkopsbot:
+  ciscoopsbot:
     ports:
       - "5000:5000"
     image: joshand/spark-operations-bot
